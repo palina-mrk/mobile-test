@@ -112,22 +112,22 @@
     ;
   }
 
-  .custom-radio__field[checked]~.custom-radio__label::before,
-  .custom-radio__field[checked]~.custom-radio__label::after {
+  .custom-radio__field:checked~.custom-radio__label::before,
+  .custom-radio__field:checked~.custom-radio__label::after {
     display: none;
   }
 }
 
-.custom-radio__field[checked]~.custom-radio__label {
+.custom-radio__field:checked~.custom-radio__label {
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid #FFFFFF;
 }
 
-.custom-radio__field[checked]~.custom-radio__best {
+.custom-radio__field:checked~.custom-radio__best {
   background: #FFFFFF;
   color: #141131;
 }
 
-.custom-radio__field[checked]~.custom-radio__best::before {
+.custom-radio__field:checked~.custom-radio__best::before {
   display: none;
 }

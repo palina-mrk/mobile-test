@@ -31,17 +31,6 @@ function setTranslations(translations) {
   document.getElementById('continue-btn').innerHTML = translations['Continue'];
 }
 
-function setEventListeners() {
-  document.getElementById('radio-yearly').addEventListener('change', (event) => {
-    if (event.currentTarget.value)
-      document.getElementById('continue-btn').setAttribute('href', 'https://apple.com/');
-  })
-  document.getElementById('radio-weekly').addEventListener('change', (event) => {
-    if (event.currentTarget.value)
-      document.getElementById('continue-btn').setAttribute('href', 'https://google.com/');
-  })
-}
-
 // Основная логика запуска
 window.onload = async () => {
   const langParam = new URLSearchParams(window.location.search).get('lang') || 'en';
