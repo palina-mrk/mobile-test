@@ -1,0 +1,138 @@
+.hero {}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  align-items: center;
+}
+
+.hero__btn-cross {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.4);
+  width: 12px;
+  height: 12px;
+  left: -2px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.hero__btn-cross::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -12px;
+  top: -12px;
+  cursor: pointer;
+}
+
+.hero__btn-cross:hover {
+  color: #ffffff;
+}
+
+.hero__title {
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.hero__cards-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.hero__cards-item {
+  width: 110px;
+  height: 146px;
+  padding: 12px 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.hero__card-title {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.hero__cards-item--art-creation {
+  background-image: url("../../images/art-creation.png");
+}
+
+.hero__cards-item--exclusive-styles {
+  background-image: url("../../images/exclusive-styles.png");
+}
+
+.hero__cards-item--magic-avatars {
+  background-image: url("../../images/magic-avatars.png");
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__cards-item--art-creation {
+    background-image: url("../../images/art-creation@2x.png");
+  }
+
+  .hero__cards-item--exclusive-styles {
+    background-image: url("../../images/exclusive-styles@2x.png");
+  }
+
+  .hero__cards-item--magic-avatars {
+    background-image: url("../../images/magic-avatars@2x.png");
+  }
+}
+
+@media (max-width: 375px) {
+  .hero__title {
+    margin: 0 0 16px;
+  }
+
+  .hero__cards-list {
+    gap: 4px;
+  }
+
+  .hero__cards-item {
+    width: 106px;
+    height: 139px;
+  }
+
+  .hero__cards-item--art-creation {
+    background-image: url("../../images/art-creation-se.png");
+  }
+
+  .hero__cards-item--exclusive-styles {
+    background-image: url("../../images/exclusive-styles-se.png");
+  }
+
+  .hero__cards-item--magic-avatars {
+    background-image: url("../../images/magic-avatars-se.png");
+  }
+}
+
+@media (max-width: 375px) and (min-resolution: 2dppx) {
+  .hero__cards-item--art-creation {
+    background-image: url("../../images/art-creation-se@2x.png");
+  }
+
+  .hero__cards-item--exclusive-styles {
+    background-image: url("../../images/exclusive-styles-se@2x.png");
+  }
+
+  .hero__cards-item--magic-avatars {
+    background-image: url("../../images/magic-avatars-se@2x.png");
+  }
+}

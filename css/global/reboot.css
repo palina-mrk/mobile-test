@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'SF Pro Display', 'Arial', sans-serif;
+  color: white;
+  background-image: url('../../images/bg.png');
+  background-size: cover;
+  background-position: top center;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-resolution: 2dppx) {
+  body {
+    background-image: url('../../images/bg@2x.png');
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('../../images/bg-se.png');
+  }
+}
+
+@media (min-resolution: 2dppx) and (max-width: 375px) {
+  body {
+    background-image: url('../../images/bg-se@2x.png');
+  }
+}

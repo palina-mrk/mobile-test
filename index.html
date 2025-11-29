@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banner Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container container--wide">
+      <div class="header__wrapper">
+        <div class="header__left">
+          <span class="header__system-time" id="system-time">9:41</span>
+        </div>
+        <div class="header__right">
+          <svg class="header__icon header__icon--signal" width="19" height="12" aria-hidden="true"
+            aria-label="Уровень сигнала">
+            <use xlink:href="images/sprite.svg#icon-signal"></use>
+          </svg>
+          <svg class="header__icon header__icon--wifi" width="17" height="12" aria-hidden="true"
+            aria-label="Уровень wifi">
+            <use xlink:href="images/sprite.svg#icon-wifi"></use>
+          </svg>
+          <svg class="header__icon header__icon--battery" width="27" height="13" aria-hidden="true"
+            aria-label="Уровень заряда батареи">
+            <use xlink:href="images/sprite.svg#icon-battery"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="header__wrapper header__wrapper--se">
+        <div class="header__left">
+          <svg class="header__icon header__icon--signal" width="19" height="12" aria-hidden="true"
+            aria-label="Уровень сигнала">
+            <use xlink:href="images/sprite.svg#icon-signal-se"></use>
+          </svg>
+          <span class="header__string">Sketch</span>
+          <svg class="header__icon header__icon--wifi" width="17" height="12" aria-hidden="true"
+            aria-label="Уровень wifi">
+            <use xlink:href="images/sprite.svg#icon-wifi"></use>
+          </svg>
+        </div>
+
+        <div class="header__center">
+          <span class="header__system-time" id="system-time">9:41 AM</span>
+        </div>
+
+        <div class="header__right">
+          <svg class="header__icon header__icon--bluetooth" width="19" height="12" aria-hidden="true"
+            aria-label="Bluetooth">
+            <use xlink:href="images/sprite.svg#icon-bluetooth"></use>
+          </svg>
+          <span class="header__string" id="system-battery">100%</span>
+          <svg class="header__icon header__icon--battery" width="29" height="12" aria-hidden="true"
+            aria-label="Уровень заряда батареи">
+            <use xlink:href="images/sprite.svg#icon-battery-se"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <a class="hero__btn-cross" href="#" aria-label="Закрыть">
+            <svg class="hero__svg-cross" width="12" height="12" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-cross"></use>
+            </svg>
+          </a>
+          <h1 class="hero__title" id="title-unlimited-access"></h1>
+          <ul class="hero__cards-list">
+            <li class="hero__cards-item hero__cards-item--art-creation">
+              <h2 class="hero__card-title" id="title-art-creation"></h2>
+            </li>
+
+            <li class="hero__cards-item hero__cards-item--exclusive-styles">
+              <h2 class="hero__card-title" id="title-exclusive-styles"></h2>
+            </li>
+
+            <li class="hero__cards-item hero__cards-item--magic-avatars">
+              <h2 class="hero__card-title" id="title-magic-avatars"></h2>
+            </li>
+          </ul>
+          <div class="plan-yearly">
+            <div class="div">
+              <h3 id="title-yearly-access"></h3>
+              <small id="best-offer-label"></small>
+            </div>
+            <p id="yearly-price-template"></p>
+          </div>
+          <section class="plans">
+            <div class="custom-radio-plan">
+              <input class="custom-radio-field visually-hidden" id="radio-self" type="radio" name="delivery"
+                value="self" checked>
+              <label class="custom-radio-label" for="radio-self">
+                <span class="custom-radio-left">
+                  <span class="custom-radio__name">Самовывоз</span>
+                  <span class="custom-radio__price">+ 0 руб.</span>
+                </span>
+                <span class="custom-radio__text">Из нашего офиса: г. Самара пр. Ленина 1а</span>
+              </label>
+            </div>
+            <div class="custom-radio-plan">
+              <input class="custom-radio-field visually-hidden" id="radio-weekly" type="radio" name="radio-weekly"
+                value="weekly">
+              <label class="custom-radio-label" for="radio-weekly">
+                <span class="custom-radio-left">
+                  <span class="custom-radio-title" id="title-weekly-access"></span>
+                </span>
+                <span class="custom-radio-right" id="yearly-price-template"></span>
+              </label>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__links">
+      <a href="https://apple.com/" id="terms-link"></a>
+      <a href="https://google.com/" id="policy-link"></a>
+      <button id="restore-btn"></button>
+      <button id="continue-btn"></button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
