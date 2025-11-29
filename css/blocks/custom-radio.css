@@ -125,7 +125,7 @@
 
 .custom-radio__field[checked]~.custom-radio__best {
   background: #FFFFFF;
-  color: black;
+  color: #141131;
 }
 
 .custom-radio__field[checked]~.custom-radio__best::before {

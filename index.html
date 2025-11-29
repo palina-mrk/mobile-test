@@ -89,7 +89,7 @@
           <form class="hero__radio-form">
             <div class="custom-radio custom-radio--best">
               <input class="custom-radio__field visually-hidden" id="radio-yearly" type="radio" name="yearly-access"
-                value="yearly-access">
+                value="yearly-access" checked>
               <label class="custom-radio__label" for="radio-yearly">
                 <span class="custom-radio__left">
                   <span class="custom-radio__title" id="title-yearly-access"></span>
@@ -101,7 +101,7 @@
             </div>
             <div class="custom-radio">
               <input class="custom-radio__field visually-hidden" id="radio-weekly" type="radio" name="weekly-access"
-                value="weekly-access" checked>
+                value="weekly-access">
               <label class="custom-radio__label" for="radio-weekly">
                 <span class="custom-radio__left">
                   <span class="custom-radio__title" id="title-weekly-access"></span>
@@ -109,6 +109,7 @@
                 <span class="custom-radio__right" id="weekly-price-template"></span>
               </label>
             </div>
+            <a class="hero__submit-btn" href="https://apple.com/" id="continue-btn"></a>
           </form>
 
         </div>
@@ -117,11 +118,20 @@
   </main>
 
   <footer>
-    <div class="footer__links">
-      <a href="https://apple.com/" id="terms-link"></a>
-      <a href="https://google.com/" id="policy-link"></a>
-      <button id="restore-btn"></button>
-      <button id="continue-btn"></button>
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__link-list">
+          <li class="footer__link-item">
+            <a href="#" class="footer__link" id="terms-link"></a>
+          </li>
+          <li class="footer__link-item">
+            <a href="#" class="footer__link" id="policy-link"></a>
+          </li>
+          <li class="footer__link-item">
+            <a href="#" class="footer__link" id="restore-btn"></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 
