@@ -1,0 +1,43 @@
+.custom-radio {
+  width: 100%;
+}
+
+.custom-radio__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  min-height: 56px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 24px;
+}
+
+.custom-radio__left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-grow: 1;
+}
+
+.custom-radio__slogan,
+.custom-radio__right {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.custom-radio__right {
+  margin: 0;
+  padding: 0;
+  width: 61px;
+  text-align: left;
+}
+
+.custom-radio__title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
