@@ -86,29 +86,30 @@
             </li>
           </ul>
 
-          <div class="hero__radio-form">
-            <div class="custom-radio">
+          <form class="hero__radio-form">
+            <div class="custom-radio custom-radio--best">
               <input class="custom-radio__field visually-hidden" id="radio-yearly" type="radio" name="yearly-access"
-                value="yearly-access" checked>
+                value="yearly-access">
               <label class="custom-radio__label" for="radio-yearly">
                 <span class="custom-radio__left">
                   <span class="custom-radio__title" id="title-yearly-access"></span>
-                  <span class="custom-radio__slogan" id="best-offer-label"></span>
+                  <span class="custom-radio__slogan" id="slogan-yearly-access"></span>
                 </span>
-                <p class="custom-radio__right" id="yearly-price-template"></p>
+                <span class="custom-radio__right" id="yearly-price-template"></span>
               </label>
+              <span class="custom-radio__best" id="best-offer-label"></span>
             </div>
             <div class="custom-radio">
               <input class="custom-radio__field visually-hidden" id="radio-weekly" type="radio" name="weekly-access"
-                value="weekly-access">
+                value="weekly-access" checked>
               <label class="custom-radio__label" for="radio-weekly">
                 <span class="custom-radio__left">
                   <span class="custom-radio__title" id="title-weekly-access"></span>
                 </span>
-                <p class="custom-radio__right" id="weekly-price-template"></p>
+                <span class="custom-radio__right" id="weekly-price-template"></span>
               </label>
             </div>
-          </div>
+          </form>
 
         </div>
       </div>

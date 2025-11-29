@@ -18,11 +18,12 @@ function setTranslations(translations) {
   document.getElementById('title-magic-avatars').innerHTML = translations['Magic Avatars <br>With 20% Off'];
 
   document.getElementById('title-yearly-access').innerHTML = translations['YEARLY ACCESS'];
+  document.getElementById('slogan-yearly-access').innerHTML = translations['Just {{price}} per year'].replace('{{price}}', '$39.99');
   document.getElementById('best-offer-label').innerHTML = translations['BEST OFFER'];
-  document.getElementById('yearly-price-template').innerHTML = translations['Just {{price}} per year'].replace('{{price}}', '$99');
+  document.getElementById('yearly-price-template').innerHTML = translations['{{price}} <br>per week'].replace('{{price}}', '$0.48');
 
   document.getElementById('title-weekly-access').innerHTML = translations['WEEKLY ACCESS'];
-  document.getElementById('weekly-price-template').innerHTML = translations['{{price}} <br>per week'].replace('{{price}}', '$9.99');
+  document.getElementById('weekly-price-template').innerHTML = translations['{{price}} <br>per week'].replace('{{price}}', '$6.99');
 
   document.getElementById('terms-link').innerHTML = translations['Terms of Use'];
   document.getElementById('policy-link').innerHTML = translations['Privacy Policy'];
