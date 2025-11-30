@@ -11,9 +11,23 @@
     max-width: 343px;
   }
 
-  /* Широкий контейнер для хедера iPhone SE / 8 / 8+ */
+  /* Широкий контейнер для хедера iPhone SE / 8+ */
   .container--wide {
     max-width: 375px;
     padding: 0 5px;
+  }
+}
+
+/* Контейнер для iPhone 8*/
+@media (max-width: 320px) {
+  .container {
+    max-width: 310px;
+    padding: 0 5px;
+  }
+
+  /* Широкий контейнер для хедера iPhone 8 */
+  .container--wide {
+    max-width: 320px;
+    padding: 0 3px;
   }
 }

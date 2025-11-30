@@ -53,3 +53,10 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 320px) {
+  .footer__link {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

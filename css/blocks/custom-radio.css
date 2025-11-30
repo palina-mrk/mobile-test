@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: center;
 }
 
 .custom-radio__slogan,
@@ -133,4 +134,48 @@
 
 .custom-radio__field:checked~.custom-radio__best::before {
   display: none;
+}
+
+@media (max-width: 320px) {
+
+  .custom-radio__label {
+    padding: 4px 16px;
+    min-height: 46px;
+  }
+
+  .custom-radio__right {
+    min-width: 75px;
+  }
+
+  .custom-radio__title,
+  .custom-radio__slogan,
+  .custom-radio__right {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .custom-radio__title {
+    max-width: 150px;
+  }
+
+  .custom-radio__best {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 1px 12px;
+    width: 91px;
+    min-height: 16px;
+  }
+
+  .custom-radio--best {
+
+    .custom-radio__label::before {
+      height: 23px;
+      width: 20px;
+    }
+
+    .custom-radio__label::after {
+      right: 114px;
+      width: 108px;
+    }
+  }
 }
