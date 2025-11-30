@@ -11,6 +11,13 @@
   display: none;
 }
 
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 11px;
+}
+
 .header__system-time {
   font-weight: 590;
   font-size: 17px;
@@ -45,6 +52,7 @@
 
 /* Размеры фона и шрифта для iPhone SE / 8 / 8+ */
 @media (max-width: 375px) {
+
   .header__wrapper {
     display: none;
   }
@@ -63,41 +71,40 @@
   .header__left {
     gap: 2px 6px;
   }
-}
 
-.header__string {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-}
+  .header__string {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
 
-.header__icon--signal {
-  width: 17px;
-  height: 10px;
-}
+  .header__icon--signal {
+    width: 17px;
+    height: 10px;
+  }
 
-.header__icon--wifi {
-  width: 15px;
-  height: 10px;
-}
+  .header__icon--wifi {
+    width: 15px;
+    height: 10px;
+  }
 
-.header__icon--bluetooth {
-  width: 6px;
-  height: 10px;
-}
+  .header__icon--bluetooth {
+    width: 6px;
+    height: 10px;
+  }
 
-.header__icon--battery {
-  width: 27px;
-  height: 12px;
-}
+  .header__icon--battery {
+    width: 27px;
+    height: 12px;
+  }
 
-.header__system-time {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
-}
+  .header__system-time {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+  }
 
-.header__right {
-  gap: 2px 4px;
-}
+  .header__right {
+    gap: 2px 4px;
+  }
 }

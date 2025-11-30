@@ -12,6 +12,7 @@ body {
   font-family: 'SF Pro Display', 'Arial', sans-serif;
   color: white;
   background-image: url('../../images/bg.png');
+  background-color: #000000;
   background-size: cover;
   background-position: top center;
   margin: 0;
@@ -41,6 +42,18 @@ a {
   }
 }
 
+@media (min-resolution: 3dppx) {
+  body {
+    background-image: url('../../images/bg@3x.png');
+  }
+}
+
+@media (min-resolution: 4dppx) {
+  body {
+    background-image: url('../../images/bg@4x.png');
+  }
+}
+
 @media (max-width: 375px) {
   body {
     background-image: url('../../images/bg-se.png');
@@ -50,5 +63,17 @@ a {
 @media (min-resolution: 2dppx) and (max-width: 375px) {
   body {
     background-image: url('../../images/bg-se@2x.png');
+  }
+}
+
+@media (min-resolution: 3dppx) and (max-width: 375px) {
+  body {
+    background-image: url('../../images/bg-se@3x.png');
+  }
+}
+
+@media (min-resolution: 4dppx) and (max-width: 375px) {
+  body {
+    background-image: url('../../images/bg-se@4x.png');
   }
 }

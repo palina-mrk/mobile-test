@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-self: end;
-  padding: 0 0 34px;
+  padding: 0 0 32px;
 }
 
 .hero__wrapper {
@@ -65,6 +65,7 @@
   justify-content: start;
   align-items: end;
   background-size: cover;
+  background-color: #15072F;
 }
 
 .hero__card-title {
@@ -98,7 +99,7 @@
   line-height: 24px;
   text-align: center;
   padding: 16px;
-  margin: 0;
+  margin: 8px 0 0;
   padding: 0;
   color: #070B33;
 }
@@ -126,6 +127,36 @@
 
   .hero__cards-item--magic-avatars {
     background-image: url("../../images/magic-avatars@2x.png");
+  }
+}
+
+
+@media (min-resolution: 3dppx) {
+  .hero__cards-item--art-creation {
+    background-image: url("../../images/art-creation@3x.png");
+  }
+
+  .hero__cards-item--exclusive-styles {
+    background-image: url("../../images/exclusive-styles@3x.png");
+  }
+
+  .hero__cards-item--magic-avatars {
+    background-image: url("../../images/magic-avatars@3x.png");
+  }
+}
+
+
+@media (min-resolution: 4dppx) {
+  .hero__cards-item--art-creation {
+    background-image: url("../../images/art-creation@4x.png");
+  }
+
+  .hero__cards-item--exclusive-styles {
+    background-image: url("../../images/exclusive-styles@4x.png");
+  }
+
+  .hero__cards-item--magic-avatars {
+    background-image: url("../../images/magic-avatars@4x.png");
   }
 }
 
@@ -165,7 +196,7 @@
   }
 
   .hero__submit-btn {
-    margin-top: 8px;
+    margin: 0;
   }
 }
 
@@ -180,5 +211,34 @@
 
   .hero__cards-item--magic-avatars {
     background-image: url("../../images/magic-avatars-se@2x.png");
+  }
+}
+
+@media (max-width: 375px) and (min-resolution: 3dppx) {
+  .hero__cards-item--art-creation {
+    background-image: url("../../images/art-creation-se@3x.png");
+  }
+
+  .hero__cards-item--exclusive-styles {
+    background-image: url("../../images/exclusive-styles-se@3x.png");
+  }
+
+  .hero__cards-item--magic-avatars {
+    background-image: url("../../images/magic-avatars-se@3x.png");
+  }
+}
+
+
+@media (max-width: 375px) and (min-resolution: 4dppx) {
+  .hero__cards-item--art-creation {
+    background-image: url("../../images/art-creation-se@4x.png");
+  }
+
+  .hero__cards-item--exclusive-styles {
+    background-image: url("../../images/exclusive-styles-se@4x.png");
+  }
+
+  .hero__cards-item--magic-avatars {
+    background-image: url("../../images/magic-avatars-se@4x.png");
   }
 }
