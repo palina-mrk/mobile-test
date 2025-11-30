@@ -33,11 +33,21 @@ function setTranslations(translations) {
 
 // Основная логика запуска
 window.onload = async () => {
-  const langParam = new URLSearchParams(window.location.search).get('lang') || 'en';
-  const translations = await loadJSON(langParam);
+  // Получение параметра языка из строки URL, либо используем английский ('en')
+  let langParam = new URLSearchParams(window.location.search).get('lang') || 'en';
+
+  // Пробуем загрузить указанный язык
+  let translations = await loadJSON(langParam);
+
+  // Если нужный файл отсутствует, пробуем загрузить en.json
+  if (!translations && langParam !== 'en') {
+    translations = await loadJSON('en'); // Загружаем fallback-языковой файл
+  }
+
+  // Проверяем наличие переводов
   if (translations) {
-    setTranslations(translations);
+    setTranslations(translations); // Применяем переводы
   } else {
-    alert('Translation not found for this language!');
+    alert('Translation not found even in English!'); // Ошибка, если даже EN не найден
   }
 };
