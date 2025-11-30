@@ -47,8 +47,8 @@
 }
 
 .hero__cards-list {
-  margin: 0;
-  padding: 0 0 34px;
+  padding: 0;
+  margin: 0 0 34px;
   list-style-type: none;
   display: flex;
   gap: 6px;
@@ -162,7 +162,7 @@
 
 @media (max-width: 375px) {
   .hero {
-    padding: 0 0 28px;
+    padding: 0 0 26px;
   }
 
   .hero__btn-cross {
@@ -175,6 +175,7 @@
 
   .hero__cards-list {
     gap: 4px;
+    margin: 0 0 26px;
   }
 
   .hero__cards-item {
