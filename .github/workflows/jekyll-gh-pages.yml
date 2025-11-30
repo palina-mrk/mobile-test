@@ -1,5 +1,8 @@
 name: Build & Test
-on: pull_request
+on:
+  push:
+    branches: ["master"]
+
 
 jobs:
   sanity-check-and-deploy:
