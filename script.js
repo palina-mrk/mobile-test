@@ -1,7 +1,7 @@
 // Функция для загрузки JSON-файла
 async function loadJSON(langCode) {
   try {
-    const response = await fetch(`/languages/${langCode}.json`);
+    const response = await fetch(`./languages/${langCode}.json`);
     if (!response.ok) throw new Error('Failed to load translation file.');
     return await response.json();
   } catch (err) {
