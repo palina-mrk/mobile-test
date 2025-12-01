@@ -1,0 +1,35 @@
+{
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "lint": "prettier --check .",
+        "lint:fix": "prettier --write .",
+    },
+    "lint-staged": {
+        "*.{css,js,html,yml,md}": "prettier --write"
+    },
+    "devDependencies": {
+        "css-loader": "^7.1.2",
+        "globals": "^16.3.0",
+        "http-server": "14.1.1",
+        "jest": "^30.0.5",
+        "jest-environment-jsdom": "^30.0.4",
+        "prettier": "^3.6.2"
+    },
+    "dependencies": {
+        "jsdom": "^26.1.0"
+    },
+    "name": "mobile-test",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/palina-mrk/mobile-test.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/palina-mrk/mobile-test/issues"
+    },
+    "homepage": "https://github.com/palina-mrk/mobile-test#readme",
+    "description": ""
+}
