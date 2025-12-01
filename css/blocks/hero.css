@@ -46,6 +46,12 @@
   padding: 0;
 }
 
+.hero__title--small {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+}
+
 .hero__cards-list {
   padding: 0;
   margin: 0 0 34px;
@@ -159,22 +165,15 @@
   }
 }
 
-@media (max-width: 375px) or (max-height: 736px) {
-  .hero {
-    padding: 0 0 26px;
-  }
+@media (max-width: 375px) {
 
-  .hero__btn-cross {
-    top: 43px;
-  }
-
-  .hero__title {
-    margin: 0 0 16px;
+  .hero__title--small {
+    font-size: 38px;
+    line-height: 42px;
   }
 
   .hero__cards-list {
     gap: 4px;
-    margin: 0 0 26px;
   }
 
   .hero__cards-item {
@@ -194,13 +193,32 @@
   .hero__cards-item--magic-avatars {
     background-image: url("../../images/magic-avatars-se.png");
   }
+}
+
+
+@media (max-height: 736px) {
+  .hero {
+    padding: 0 0 26px;
+  }
+
+  .hero__btn-cross {
+    top: 43px;
+  }
+
+  .hero__title {
+    margin: 0 0 16px;
+  }
+
+  .hero__cards-list {
+    margin: 0 0 26px;
+  }
 
   .hero__submit-btn {
     margin: 0;
   }
 }
 
-@media (max-width: 375px) or (max-height: 736px) and (min-resolution: 2dppx) {
+@media (max-width: 375px) and (min-resolution: 2dppx) {
   .hero__cards-item--art-creation {
     background-image: url("../../images/art-creation-se@2x.png");
   }
@@ -214,7 +232,7 @@
   }
 }
 
-@media (max-width: 375px) or (max-height: 736px) and (min-resolution: 3dppx) {
+@media (max-width: 375px) and (min-resolution: 3dppx) {
   .hero__cards-item--art-creation {
     background-image: url("../../images/art-creation-se@3x.png");
   }
@@ -229,7 +247,7 @@
 }
 
 
-@media (max-width: 375px) or (max-height: 736px) and (min-resolution: 4dppx) {
+@media (max-width: 375px) and (min-resolution: 4dppx) {
   .hero__cards-item--art-creation {
     background-image: url("../../images/art-creation-se@4x.png");
   }

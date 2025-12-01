@@ -40,7 +40,7 @@ footer {
   opacity: 30%;
 }
 
-@media (max-width: 375px) or (max-height: 736px) {
+@media (max-height: 736px) {
   footer {
     padding: 0 0 8px;
   }

@@ -50,4 +50,10 @@ window.onload = async () => {
   } else {
     alert('Translation not found even in English!'); // Ошибка, если даже EN не найден
   }
+
+  // Уменьшаем размер заголовка для французского языка
+  if (langParam === 'fr')
+    document.querySelector('.hero__title').classList.add('hero__title--small');
+  else
+    document.querySelector('.hero__title').classList.remove('hero__title--small');
 };
