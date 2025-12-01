@@ -73,7 +73,7 @@ window.onload = async () => {
   }
 
   // Уменьшаем размер заголовка для французского языка
-  if (langParam === 'fr')
+  if (langParam === 'fr' || langParam === 'pt')
     document.querySelector('.hero__title').classList.add('hero__title--small');
   else
     document.querySelector('.hero__title').classList.remove('hero__title--small');
