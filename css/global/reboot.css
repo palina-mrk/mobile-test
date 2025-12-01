@@ -54,26 +54,8 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-height: 736px) {
   body {
-    background-image: url('../../images/bg-se.png');
-  }
-}
-
-@media (min-resolution: 2dppx) and (max-width: 375px) {
-  body {
-    background-image: url('../../images/bg-se@2x.png');
-  }
-}
-
-@media (min-resolution: 3dppx) and (max-width: 375px) {
-  body {
-    background-image: url('../../images/bg-se@3x.png');
-  }
-}
-
-@media (min-resolution: 4dppx) and (max-width: 375px) {
-  body {
-    background-image: url('../../images/bg-se@4x.png');
+    background-position: top -32px center;
   }
 }

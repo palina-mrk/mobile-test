@@ -31,10 +31,30 @@ function setTranslations(translations) {
   document.getElementById('continue-btn').innerHTML = translations['Continue'];
 }
 
+// Функция для определения языка из системных настроек
+function getSystemLanguage() {
+  // Список поддерживаемых языков
+  const supportedLanguages = ['en', 'de', 'es', 'fr', 'ja', 'pt'];
+
+  // Получаем системный язык браузера
+  const systemLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().substring(0, 2);
+
+  // Проверяем, поддерживается ли системный язык
+  if (supportedLanguages.includes(systemLang)) {
+    return systemLang;
+  }
+
+  // Если системный язык не поддерживается, возвращаем английский
+  return 'en';
+}
+
 // Основная логика запуска
 window.onload = async () => {
-  // Получение параметра языка из строки URL, либо используем английский ('en')
-  let langParam = new URLSearchParams(window.location.search).get('lang') || 'en';
+  // Получение параметра языка из строки URL
+  const urlLangParam = new URLSearchParams(window.location.search).get('lang');
+
+  // Если параметр lang есть в URL, используем его, иначе определяем системный язык
+  let langParam = urlLangParam || getSystemLanguage();
 
   // Пробуем загрузить указанный язык
   let translations = await loadJSON(langParam);
@@ -42,6 +62,7 @@ window.onload = async () => {
   // Если нужный файл отсутствует, пробуем загрузить en.json
   if (!translations && langParam !== 'en') {
     translations = await loadJSON('en'); // Загружаем fallback-языковой файл
+    langParam = 'en'; // Обновляем langParam для корректной обработки стилей
   }
 
   // Проверяем наличие переводов
