@@ -19,7 +19,7 @@
 }
 
 .header__system-time {
-  font-weight: 590;
+  font-weight: 600;
   font-size: 17px;
   line-height: 22px;
 }
@@ -51,7 +51,7 @@
 }
 
 /* Размеры фона и шрифта для iPhone SE / 8 / 8+ */
-@media (max-width: 375px) {
+@media (max-width: 375px) or (max-height: 736px) {
 
   .header__wrapper {
     display: none;

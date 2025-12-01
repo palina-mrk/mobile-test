@@ -94,7 +94,7 @@
   cursor: pointer;
   min-height: 56px;
   width: 100%;
-  font-weight: 590;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -159,7 +159,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px) or (max-height: 736px) {
   .hero {
     padding: 0 0 26px;
   }
@@ -200,7 +200,7 @@
   }
 }
 
-@media (max-width: 375px) and (min-resolution: 2dppx) {
+@media (max-width: 375px) or (max-height: 736px) and (min-resolution: 2dppx) {
   .hero__cards-item--art-creation {
     background-image: url("../../images/art-creation-se@2x.png");
   }
@@ -214,7 +214,7 @@
   }
 }
 
-@media (max-width: 375px) and (min-resolution: 3dppx) {
+@media (max-width: 375px) or (max-height: 736px) and (min-resolution: 3dppx) {
   .hero__cards-item--art-creation {
     background-image: url("../../images/art-creation-se@3x.png");
   }
@@ -229,7 +229,7 @@
 }
 
 
-@media (max-width: 375px) and (min-resolution: 4dppx) {
+@media (max-width: 375px) or (max-height: 736px) and (min-resolution: 4dppx) {
   .hero__cards-item--art-creation {
     background-image: url("../../images/art-creation-se@4x.png");
   }
