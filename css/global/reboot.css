@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   font-family: 'SF Pro Display', 'Arial', sans-serif;
   color: white;
-  background-image: url('../../images/bg.png');
+  background-image: url('../../images/bg.jpg');
   background-color: #000000;
   background-size: cover;
   background-position: top center;
@@ -38,19 +38,19 @@ a {
 
 @media (min-resolution: 2dppx) {
   body {
-    background-image: url('../../images/bg@2x.png');
+    background-image: url('../../images/bg@2x.jpg');
   }
 }
 
 @media (min-resolution: 3dppx) {
   body {
-    background-image: url('../../images/bg@3x.png');
+    background-image: url('../../images/bg@3x.jpg');
   }
 }
 
 @media (min-resolution: 4dppx) {
   body {
-    background-image: url('../../images/bg@4x.png');
+    background-image: url('../../images/bg@4x.jpg');
   }
 }
 
